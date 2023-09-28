@@ -1,6 +1,6 @@
 const searchCharacter = require ("./index.js");
 
-const character = "Shinano";
+const character = "shinano";
 
 searchCharacter(character)
   .then((result) => {
