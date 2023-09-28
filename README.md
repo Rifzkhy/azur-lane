@@ -1,5 +1,5 @@
 # Azur Lane
-<img src="./preview.webp" />
+<img src="https://raw.githubusercontent.com/Rifzkhy/azur-lane/main/preview.webp" />
 
 Scrape Azur Lane ship girl information from [Azurlane WIKI](https://azurlane.koumakan.jp/)
 
@@ -28,7 +28,7 @@ searchCharacter(character)
 
 ## Output
 
-```json
+```javascript
 {
   url: 'https://azurlane.koumakan.jp/w/index.php?search=shinano',
   banner: 'https://azurlane.netojuu.com/images/4/42/ShinanoBanner.png',
