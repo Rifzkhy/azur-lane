@@ -1,4 +1,4 @@
-const {searchCharacter} = require("@rifzkhy/azur-lane");
+const searchCharacter = require ("./index.js");
 
 const character = "Shinano";
 

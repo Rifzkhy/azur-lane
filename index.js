@@ -1,14 +1,14 @@
-const request = require("request");
-const cheerio = require("cheerio");
+const request = require ("request");
+const cheerio  = require ("cheerio");
 
-function searchCharacter(character) {
+module.exports = searchCharacter = (character) =>{
   return new Promise((resolve, reject) => {
     const source = `https://azurlane.koumakan.jp/w/index.php?search=${character}&title=Special%3ASearch&go=Go`;
 
     request(source, (error, response, html) => {
       if (error || response.statusCode !== 200) {
         reject(error);
-        return;
+        return;e 
       }
 
       const $ = cheerio.load(html);
@@ -193,7 +193,3 @@ function search(html, resolve, url) {
     });
   });
 }
-
-module.exports = {
-  searchCharacter,
-};
