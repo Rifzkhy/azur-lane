@@ -1,36 +1,47 @@
-# Azur Lane
-<img src="https://raw.githubusercontent.com/Rifzkhy/azur-lane/main/preview.webp" />
+# Azur Lane Ship Girl Information Scraper
 
-Scrape Azur Lane ship girl information from [Azurlane WIKI](https://azurlane.koumakan.jp/)
+![Shinano](https://i.imgur.com/PgPhVEc.png)
+
+<div align="center">
+<img alt="Discord" src="https://img.shields.io/discord/1047444508176023572?style=for-the-badge&color=%23e3e3e3&logo=discord&&logoColor=%23e3e3e3">
+  <img alt="npm" src="https://img.shields.io/npm/dt/%40rifzkhy%2Fazur-lane?style=for-the-badge&color=%23e3e3e3">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/rifzkhy/azur-lane?style=for-the-badge&color=%23e3e3e3">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/rifzkhy/azur-lane?style=for-the-badge&color=%23e3e3e3">
+  <img alt="GitHub" src="https://img.shields.io/github/license/rifzkhy/azur-lane?style=for-the-badge&color=%23e3e3e3">
+</div>
+
+### The picture above is only an illustration 
+
+This Node.js module allows you to scrape Azur Lane ship girl information from [Azurlane Wiki](https://azurlane.koumakan.jp/).
 
 ## Installation
+
+You can install this module using npm:
 
 ```bash
 npm install @rifzkhy/azur-lane
 ```
 
 ## Example
-
+Here's an example of how to use this module in your Node.js code:
 ```javascript
-const searchCharacter = require ("@rifzkhy/azur-lane");
+const azurlane = require("./index.js");
 
-const character = "shinano";
+const shipname = "shinano";
 
-searchCharacter(character)
+azurlane(shipname)
   .then((result) => {
     console.log(result);
   })
   .catch((error) => {
     console.error(error);
   });
-
 ```
 
 ## Output
-
+The azurlane function returns detailed information about the specified ship girl. Here's an example of the output structure:
 ```javascript
 {
-  url: 'https://azurlane.koumakan.jp/w/index.php?search=shinano',
   banner: 'https://azurlane.netojuu.com/images/4/42/ShinanoBanner.png',
   skin: 'https://azurlane.netojuu.com/images/2/2f/ShinanoShipyardIcon.png',
   chibi: 'https://azurlane.netojuu.com/images/5/5f/ShinanoChibi.png',
@@ -78,11 +89,14 @@ ship's AVI by 5% (15%). When the fleet this ship is NOT in starts its 3rd, 4th, 
       name: 'Protector of the New Moon',
       description: "While this ship is afloat: increases the FP, EVA, and ASW of your DDs by 5% (15%). If the fleet this ship is in contains 3 (or more) Sakura Empire ships: decreases this ship's DMG taken from Main Guns and Aircraft by 10% (20%) and increases AVI and Accuracy by 5% (15%) for all your Sakura Empire CVs and CVLsIn-game only mentions CVs, but IJN CVLs are also affected by this buff."
     },
-    skill4: { icon: '', name: '', description: '' },
-    skill5: { icon: '', name: '', description: '' },
-    skill6: { icon: '', name: '', description: '' }
+    skill4: { icon: undefined, name: undefined, description: undefined },
+    skill5: { icon: undefined, name: undefined, description: undefined },
+    skill6: { icon: undefined, name: undefined, description: undefined }
   }
 }
 ```
+This output provides comprehensive information about the specified ship girl's attributes, skills, and more.
 
-## License [MIT](https://github.com/Rifzkhy/azur-lane/blob/main/LICENSE)
+Feel free to customize and use this module to retrieve Azur Lane ship girl information for your applications.
+
+I've improved the formatting and provided a more detailed explanation of the module and its output. You can replace the placeholder text with actual information as needed.

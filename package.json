@@ -1,11 +1,25 @@
 {
   "name": "@rifzkhy/azur-lane",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Azurlane scraper",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rifzkhy/azur-lane.git"
+  },
+  "keywords": [
+    "scraper",
+    "azurlane",
+    "azur-lane",
+    "shipgirl",
+    "shikikan",
+    "nodejs",
+    "cheerio",
+    "request"
+  ],
   "author": "@rifzkhy",
   "license": "MIT",
   "dependencies": {

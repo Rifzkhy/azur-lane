@@ -1,8 +1,8 @@
-const searchCharacter = require ("./index.js");
+const azurlane = require("./index.js");
 
-const character = "shinano";
+const shipname = "shinano";
 
-searchCharacter(character)
+azurlane(shipname)
   .then((result) => {
     console.log(result);
   })
